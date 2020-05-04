@@ -26,7 +26,7 @@
 | Number Obfuscation | Split numbers into operations |
 | Rename Members | Rename classes, methods and fields |
 | Shuffle Members | Shuffles all class members |
-| String Encrption | Encrypt strings (that's obvious lol) |
+| String Encryption | Encrypt strings (that's obvious lol) |
 
 ### Optimization:
 
