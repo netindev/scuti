@@ -1,0 +1,145 @@
+{
+  "input": "input.jar",
+  "output": "output.jar",
+  
+  "libraries": [
+    "path/to/rt.jar"
+  ],
+  
+  "corrupt_output_stream": true,
+  "corrupt_class_names": false,
+  
+  "obfuscation": {
+    "class_encrypt": {
+      "enable_transformer": false,
+      
+      "loader_name": "ScutiTemplate",
+      "main_class": "tk/netindev/scuti/core/Scuti",
+      
+      "string_key": 315,
+      "class_key": 945
+    },
+    
+    "control_flow": {
+      "enable_transformer": true,
+      
+      "heavy_try_catch": true,
+      "goto_flooding": true
+    },
+    
+    "hide_code": {
+      "enable_transformer": true
+    },
+    
+    "invoke_dynamic": {
+      "enable_transformer": true
+    },
+    
+    "miscellaneous_obfuscation": {
+      "enable_transformer": true,
+      
+      "invalid_annotation": true,
+      
+      "massive_source": true,
+      "massive_signature": true,
+      
+      "push_transient": true,
+      "push_varargs": true,
+      
+      "duplicate_variables": true,
+      
+      "variable_descriptor": true,
+      
+      "variable_descriptor_list": [
+        "Z", "C", "B", "S", "I", "F", "J", "D",
+        "Ljava/lang/Integer;",
+        "Ljava/lang/String;"
+      ],
+      
+      "random_exceptions": true
+    },
+    
+    "number_obfuscation": {
+      "enable_transformer": true,
+      
+      "execute_twice": true
+    },
+        
+    "rename_members": {
+      "enable_transformer": true,
+      
+      "remove_packages": true,
+      
+      "rename_classes": true,
+      "rename_methods": true,
+      "rename_fields": true,
+      
+      "internal_dictionary": "alphabet",
+      
+      "keep_classes": [
+        "tk/netindev/scuti/core/Scuti"
+      ],
+      "keep_methods": [
+        "z/y/x/Class/methodName"
+      ],
+      "keep_fields": [
+        "z/y/x/Class/fieldName"
+      ],
+      
+      "packages_dictionary": "dictionaries/glitchy.txt",
+      "classes_dictionary": "dictionaries/glitchy.txt",
+      "methods_dictionary": "dictionaries/glitchy.txt",
+      "fields_dictionary": "dictionaries/glitchy.txt"
+    },
+    
+    "shuffle_members": {
+      "enable_transformer": true
+    },
+    
+    "string_encryption": {
+      "enable_transformer": true,
+      
+      "type": "strong"
+    }
+  },
+  
+  "optimization": {
+    "dead_code": {
+      "enable_transformer": true
+    },
+    
+    "no_operation": {
+      "enable_transformer": true
+    },
+    
+    "loop": {
+      "enable_transformer": false
+    },
+    
+    "peephole": {
+      "enable_transformer": false
+    },
+    
+    "redudant": {
+      "enable_transformer": false
+    }
+  },
+  
+  "shrinking": {
+    "unused_members": {
+      "enable_transformer": true,
+          
+      "remove_classes": true,
+      "remove_methods": true,
+      "remove_fields": true,
+      
+      "keep_classes": [
+         "z/y/x/Class"
+      ]
+    },
+    
+    "inner_class": {
+      "enable_transformer": true
+    }
+  }
+}
