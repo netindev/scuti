@@ -7,6 +7,5 @@
   <modules>
   	<module>scuti-core</module>
   	<module>scuti-gui</module>
-  	<module>scuti-test</module>
   </modules>
 </project>
