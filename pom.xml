@@ -6,6 +6,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>scuti-core</module>
-  	<module>scuti-gui</module>
+  	<!-- <module>scuti-gui</module>  -->
   </modules>
 </project>
