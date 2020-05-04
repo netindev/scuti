@@ -1,4 +1,4 @@
-# scuti [![Build Status](https://travis-ci.org/netindev/scuti.svg?branch=master)](https://travis-ci.org/netindev/scuti)
+# scuti [![Build Status](https://travis-ci.org/netindev/scuti.svg?branch=master)](https://travis-ci.org/netindev/scuti) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c2f3c51e05ae4422bb869c141959b12d)](https://www.codacy.com/manual/netindev/scuti?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=netindev/scuti&amp;utm_campaign=Badge_Grade)
 
 ## Download
 * Binary releases: https://github.com/netindev/scuti/releases
